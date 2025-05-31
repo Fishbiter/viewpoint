@@ -32077,6 +32077,6 @@ module.exports = module.bundle.resolve("guess.262c5e2b.png") + "?" + Date.now();
 },{}],"7iPXG":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("camera.953e42e8.png") + "?" + Date.now();
 
-},{}]},["iUuJv","fILKw"], "fILKw", "parcelRequire60fa", {}, "./", "/")
+},{}]},["iUuJv","fILKw"], "fILKw", "parcelRequire60fa", {}, "./", "./")
 
 //# sourceMappingURL=viewpoint.1fcc916e.js.map

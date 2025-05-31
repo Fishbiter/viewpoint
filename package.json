@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A basic 3D game framework using Three.js for browser.",
   "scripts": {
-    "start": "parcel src/index.html --port 1234 --open"
+    "start": "parcel src/index.html --port 1234 --open --public-url /viewpoint/"
   },
   "dependencies": {
     "three": "^0.160.0"

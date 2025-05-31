@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><script type="importmap">{"imports":{"7N7Fl":"/viewpoint/camera.953e42e8.png","inmf2":"/viewpoint/guess.262c5e2b.png"}}</script>
+    <meta charset="utf-8">
+    <title>Viewpoint</title>
+    <style>html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f8fafc;
+  background: #181a20;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  font-family: Segoe UI, Roboto, Arial, sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  z-index: 2;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.title {
+  letter-spacing: .04em;
+  color: #e0e6f0;
+  text-shadow: 0 2px 20px #000a, 0 0 4px #3cf8;
+  margin-bottom: .2em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #aab5c8;
+  letter-spacing: .04em;
+  text-shadow: 0 0 8px #0008;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+
+.instructions-row {
+  pointer-events: none;
+  z-index: 2;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  margin-bottom: .3em;
+  display: flex;
+  position: relative;
+}
+
+.instruction {
+  color: #fff;
+  text-align: center;
+  opacity: .95;
+  user-select: none;
+  background: #23263a;
+  border: 2px solid #3278ff33;
+  border-radius: 1.3em;
+  flex: none;
+  min-width: 240px;
+  max-width: 600px;
+  margin: 0 20px;
+  padding: .3em 1.2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  box-shadow: 0 2px 16px #000a;
+}
+
+#threejs-canvas-container {
+  aspect-ratio: 25 / 9;
+  box-sizing: border-box;
+  background: #191b23;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-width: 320px;
+  height: auto;
+  margin: 30px auto 0;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 32px #0006;
+}
+
+#threejs-canvas-container canvas {
+  box-sizing: border-box;
+  background: none;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+
+#result-string {
+  color: #f8fafc;
+  text-align: center;
+  letter-spacing: .01em;
+  opacity: .96;
+  z-index: 5;
+  background: #23263a;
+  border-radius: 1em;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 2.5em;
+  margin: 24px auto 0;
+  padding: 18px 0;
+  font-family: inherit;
+  font-size: 2em;
+  position: relative;
+  box-shadow: 0 2px 16px #000a;
+}
+
+div[style*="pointer-events: none"]:not(#result-string) {
+  z-index: 10;
+}
+</style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">Viewpoint</div>
+      <div class="subtitle">A game by Fishbiter and GPT-4.1</div>
+    </div>
+    <div class="instructions-row">
+      <div class="instruction left">Look here</div>
+      <div style="flex: 80px"></div>
+      <div class="instruction right">Click here</div>
+    </div>
+    <div id="threejs-canvas-container"></div>
+    <div id="result-string"></div>
+    <script type="module" src="/viewpoint/viewpoint.1fcc916e.js"></script>
+  
+</body></html>
